@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4b0082, #8b0000);
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+}
+
+.container {
+    width: 85%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+input, select {
+    padding: 8px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: white;
+    color: #4b0082;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+.refresh-btn {
+    background: #ffcc00;
+    color: black;
+}
+
+.semester-box {
+    border: 2px solid white;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.subject-row {
+    margin: 10px 0;
+}
+
+.sgpa-text {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.result-box {
+    margin-top: 20px;
+}
+
+#cgpaResult {
+    font-size: 30px;
+    margin-top: 15px;
+    background: white;
+    color: #4b0082;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
