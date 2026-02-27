@@ -46,13 +46,20 @@ function generateSubjects(semesterNo) {
 
     for (let j = 1; j <= subjectCount; j++) {
 
+        let creditOptions = `<option value="">Credit</option>`;
+        for (let c = 1; c <= 10; c++) {
+            creditOptions += `<option value="${c}">${c}</option>`;
+        }
+
         const subjectRow = document.createElement("div");
         subjectRow.classList.add("subject-row");
 
         subjectRow.innerHTML = `
             <label>Subject ${j}</label>
 
-            <input type="number" min="1" placeholder="Credit" class="credit">
+            <select class="credit">
+                ${creditOptions}
+            </select>
 
             <select class="grade">
                 <option value="">Select Grade</option>
