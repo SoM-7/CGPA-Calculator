@@ -1,31 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CGPA Calculator</title>
-    <link rel="stylesheet" href="style.css">
+<title>CGPA Calculator</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
+
 <body>
 
 <div class="container">
 
-    <h1>CGPA Calculator</h1>
+<div class="title-box">
 
-    <div class="top-controls">
-        <label>Number of Semesters:</label>
-        <input type="number" id="semesterCount" min="1" placeholder="Enter number">
-        <button onclick="generateSemesters()">Create</button>
-        <button class="refresh-btn" onclick="refreshAll()">Refresh All</button>
-    </div>
+<h1 class="title">CGPA Calculator</h1>
 
-    <div id="semesterContainer"></div>
+<div class="top-controls">
 
-    <div class="result-box">
-        <button onclick="calculateCGPA()">Calculate CGPA</button>
-        <h2 id="cgpaResult"></h2>
-    </div>
+<label class="semester-label">Number of Semesters:</label>
+
+<input type="number" id="semesterCount" min="1" placeholder="Enter number">
+
+<p id="warning" class="warning"></p>
+
+</div>
+
+<div class="top-buttons">
+
+<button onclick="generateSemesters()">Create</button>
+
+<button class="refresh-btn" onclick="refreshAll()">
+<i class="fa-solid fa-rotate"></i> Refresh All
+</button>
+
+</div>
+
+</div>
+
+<div id="semesterContainer"></div>
+
+<div class="result-box">
+
+<div class="cgpa-row">
+
+<button onclick="calculateCGPA()">Calculate CGPA</button>
+
+<h2 id="cgpaResult"></h2>
+
+</div>
+
+</div>
 
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
